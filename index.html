@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Sable | Creative Portfolio</title>
+    <meta
+      name="description"
+      content="Studio Sable is a creative portfolio exploring visual storytelling, identity, and contemporary art direction."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#top" class="brand">Studio Sable</a>
+          <div class="nav-links">
+            <a href="#works">Selected works</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Visual storyteller / art director</p>
+            <h1>
+              Crafting<br />
+              luminous<br />
+              identities.
+            </h1>
+            <p class="intro">
+              I design tactile visual experiences for brands, culture, and ideas that deserve
+              a slower, more intentional gaze.
+            </p>
+            <div class="hero-actions">
+              <a href="#works" class="button primary">View selected works</a>
+              <a href="#contact" class="button secondary">Get in touch</a>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Featured artwork">
+            <div class="image-frame large">
+              <img
+                src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80"
+                alt="Abstract art installation in warm tones"
+              />
+            </div>
+            <div class="image-caption">
+              <span>Selected project</span>
+              <strong>Quiet Forms</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="statement">
+          <p>
+            I build narrative-led design systems that balance poetry with precision — from brand
+            direction to immersive digital experiences.
+          </p>
+        </section>
+
+        <section id="works" class="works">
+          <div class="section-heading">
+            <p class="eyebrow">Selected works</p>
+            <h2>Curated studies in form, rhythm, and mood.</h2>
+          </div>
+
+          <div class="work-grid">
+            <article class="work-card featured">
+              <div class="work-image">
+                <img
+                  src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1200&q=80"
+                  alt="Minimal gallery composition"
+                />
+              </div>
+              <div class="work-meta">
+                <div>
+                  <p class="meta-label">Brand identity</p>
+                  <h3>Northlane</h3>
+                </div>
+                <p>
+                  A refined identity system for a contemporary cultural label exploring slow
+                  luxury and quiet confidence.
+                </p>
+              </div>
+            </article>
+
+            <article class="work-card">
+              <div class="work-image">
+                <img
+                  src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80"
+                  alt="Editorial portrait composition"
+                />
+              </div>
+              <div class="work-meta">
+                <p class="meta-label">Art direction</p>
+                <h3>Afterlight</h3>
+              </div>
+            </article>
+
+            <article class="work-card">
+              <div class="work-image">
+                <img
+                  src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+                  alt="Textured architectural photography"
+                />
+              </div>
+              <div class="work-meta">
+                <p class="meta-label">Editorial design</p>
+                <h3>Field Notes</h3>
+              </div>
+            </article>
+
+            <article class="work-card wide">
+              <div class="work-image">
+                <img
+                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80"
+                  alt="Creative workspace aesthetic"
+                />
+              </div>
+              <div class="work-meta">
+                <div>
+                  <p class="meta-label">Digital experience</p>
+                  <h3>Velvet Horizon</h3>
+                </div>
+                <p>
+                  A web presence for a multidisciplinary studio exploring culture, design, and
+                  creative commerce.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="about" class="about">
+          <div class="about-copy">
+            <p class="eyebrow">About</p>
+            <h2>Designing for atmosphere, meaning, and memory.</h2>
+          </div>
+
+          <div class="about-body">
+            <p>
+              I’m a multidisciplinary designer building visual systems for cultural brands,
+              founders, and ideas shaped by emotion and clarity. My practice moves between art
+              direction, identity design, and digital storytelling — always with a focus on the
+              emotional texture of the work.
+            </p>
+            <p>
+              Whether I’m shaping a visual language for a new launch or crafting a quiet gallery
+              experience online, my aim is to create work that feels considered, lasting, and a
+              little unforgettable.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer id="contact" class="site-footer">
+        <div class="footer-line"></div>
+        <div class="footer-content">
+          <div>
+            <p class="eyebrow">Available for commissions</p>
+            <h2>Let’s build something intentional.</h2>
+          </div>
+          <a href="mailto:hello@studiosable.com" class="button primary">hello@studiosable.com</a>
+        </div>
+        <div class="footer-meta">
+          <span>Studio Sable</span>
+          <span>© <span id="year"></span></span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
