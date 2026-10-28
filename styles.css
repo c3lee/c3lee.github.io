@@ -34,7 +34,7 @@ a {
 }
 
 .page-shell {
-  max-width: 1080px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 52px 24px 80px;
 }
@@ -42,7 +42,7 @@ a {
 .masthead {
   display: grid;
   gap: 18px;
-  max-width: 920px;
+  max-width: 1000px;
   margin-bottom: 56px;
 }
 
@@ -63,11 +63,15 @@ a {
 }
 
 .gallery {
-  display: grid;
-  gap: 64px;
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  padding-bottom: 18px;
+  scrollbar-width: thin;
 }
 
 .work {
+  flex: 0 0 340px;
   display: grid;
   gap: 12px;
 }
@@ -82,12 +86,14 @@ a {
 .frame {
   background: rgba(255, 255, 255, 0.18);
   border: 1px solid var(--line);
-  padding: 18px;
+  padding: 12px;
   box-shadow: 0 14px 22px var(--shadow);
+  width: 300px;
 }
 
 .screen {
-  min-height: 380px;
+  width: 100%;
+  height: 200px;
   background: #fff;
   border: 1px solid rgba(23, 20, 16, 0.12);
   overflow: hidden;
@@ -97,7 +103,7 @@ a {
   display: flex;
   align-items: center;
   gap: 8px;
-  height: 34px;
+  height: 30px;
   padding: 0 12px;
   background: #f0ece7;
   border-bottom: 1px solid rgba(23, 20, 16, 0.08);
@@ -105,16 +111,17 @@ a {
 
 .frame-top span {
   display: block;
-  width: 9px;
-  height: 9px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: rgba(23, 20, 16, 0.26);
 }
 
 .screen-body {
   display: grid;
-  grid-template-columns: 140px 1fr;
-  min-height: 346px;
+  grid-template-columns: 90px 1fr;
+  height: calc(100% - 30px);
+  min-height: 0;
 }
 
 .nav-rail {
@@ -123,7 +130,7 @@ a {
 }
 
 .content {
-  padding: 20px 22px 18px;
+  padding: 12px 12px 10px;
   background: linear-gradient(180deg, #fff 0%, #faf7f2 100%);
 }
 
@@ -137,36 +144,36 @@ a {
 
 .headline {
   width: 62%;
-  height: 12px;
-  margin-bottom: 12px;
+  height: 8px;
+  margin-bottom: 8px;
 }
 
 .subhead {
   width: 38%;
-  height: 10px;
-  margin-bottom: 22px;
+  height: 7px;
+  margin-bottom: 12px;
 }
 
 .stack-row {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-  gap: 16px;
-  margin-bottom: 18px;
+  gap: 10px;
+  margin-bottom: 12px;
 }
 
 .block {
-  height: 160px;
-  border-radius: 12px;
+  height: 58px;
+  border-radius: 8px;
   background: linear-gradient(180deg, #f1ece5 0%, #d9d1c8 100%);
 }
 
 .block.tall {
-  height: 210px;
+  height: 76px;
 }
 
 .bar {
   width: 100%;
-  height: 88px;
+  height: 52px;
   background: linear-gradient(180deg, #f5f1ec 0%, #ddd1c6 100%);
 }
 
@@ -178,15 +185,15 @@ a {
 
 .screen.government .screen-body {
   background: linear-gradient(180deg, #faf6f1 0%, #efe7df 100%);
-  padding: 18px;
+  padding: 12px;
 }
 
 .row {
   display: block;
   border-radius: 999px;
   background: rgba(23, 20, 16, 0.13);
-  height: 12px;
-  margin-bottom: 16px;
+  height: 8px;
+  margin-bottom: 10px;
 }
 
 .row.top {
@@ -204,27 +211,27 @@ a {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-  margin-top: 10px;
+  gap: 8px;
+  margin-top: 8px;
 }
 
 .mini-card {
-  height: 110px;
-  border-radius: 10px;
+  height: 52px;
+  border-radius: 8px;
   background: linear-gradient(180deg, #fefdfc 0%, #eae0d6 100%);
 }
 
 .screen.primer .screen-body {
   background: linear-gradient(180deg, #faf8f4 0%, #f0e8df 100%);
-  padding: 18px;
+  padding: 12px;
 }
 
 .editorial-line {
   display: block;
-  height: 10px;
+  height: 8px;
   border-radius: 999px;
   background: rgba(23, 20, 16, 0.12);
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .editorial-line.long {
@@ -238,9 +245,9 @@ a {
 .editorial-body {
   display: grid;
   grid-template-columns: 1.4fr 0.8fr;
-  gap: 14px;
-  margin-top: 18px;
-  margin-bottom: 18px;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .feature-panel,
@@ -248,40 +255,40 @@ a {
 .mini-box,
 .graph-panel,
 .timeline-row > div {
-  border-radius: 12px;
+  border-radius: 8px;
   background: linear-gradient(180deg, #efe7df 0%, #d7cab9 100%);
 }
 
 .feature-panel {
-  min-height: 150px;
+  min-height: 60px;
 }
 
 .side-panel {
-  min-height: 150px;
+  min-height: 60px;
   background: linear-gradient(180deg, #f6f1eb 0%, #d8cabd 100%);
 }
 
 .mini-row {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
+  gap: 8px;
 }
 
 .mini-box {
-  height: 90px;
+  height: 30px;
 }
 
 .screen.defense .screen-body {
   background: linear-gradient(180deg, #faf8f5 0%, #efe8e0 100%);
-  padding: 18px;
+  padding: 12px;
 }
 
 .analytics-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 18px;
+  gap: 10px;
+  margin-bottom: 12px;
 }
 
 .tiny,
@@ -292,38 +299,38 @@ a {
 }
 
 .tiny {
-  width: 36px;
-  height: 8px;
+  width: 26px;
+  height: 7px;
 }
 
 .short {
-  width: 86px;
-  height: 8px;
+  width: 70px;
+  height: 7px;
 }
 
 .analytics-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-  gap: 14px;
-  margin-bottom: 18px;
+  gap: 8px;
+  margin-bottom: 10px;
 }
 
 .graph-panel {
-  min-height: 130px;
+  min-height: 52px;
 }
 
 .graph-panel.large {
-  min-height: 180px;
+  min-height: 70px;
 }
 
 .timeline-row {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
+  gap: 8px;
 }
 
 .timeline-row > div {
-  height: 82px;
+  height: 34px;
   background: linear-gradient(180deg, rgba(23, 20, 16, 0.08), rgba(23, 20, 16, 0.18));
 }
 
@@ -336,9 +343,9 @@ a {
 }
 
 .work p {
-  max-width: 700px;
+  max-width: 300px;
   color: var(--muted);
-  font-size: 0.97rem;
+  font-size: 0.92rem;
 }
 
 .contact {
@@ -359,19 +366,15 @@ a {
     padding-right: 18px;
   }
 
-  .screen-body {
-    grid-template-columns: 1fr;
+  .gallery {
+    gap: 24px;
   }
 
-  .nav-rail {
-    display: none;
+  .work {
+    flex-basis: 290px;
   }
 
   .frame {
-    padding: 12px;
-  }
-
-  .screen {
-    min-height: 320px;
+    width: 270px;
   }
 }
